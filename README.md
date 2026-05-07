@@ -151,8 +151,6 @@ Como este projeto utiliza Node.js, a pasta `node_modules` foi adicionada ao arqu
   </a>
 </p>
 
-**Professores Responsáveis:** Paulo Camargo e Raul Porto.
-
 ---
 
 ## 🏁 Conclusão Final
