@@ -1,21 +1,22 @@
 # 📰 Monitor de Manchetes em Tempo Real com Node.js e SQLite
 
 <p align="center">
-  <img src="[https://img.shields.io/badge/Status-FINALIZADO-10B981?style=for-the-badge&logo=checkmarx&logoColor=white](https://img.shields.io/badge/Status-FINALIZADO-10B981?style=for-the-badge&logo=checkmarx&logoColor=white)">
-  <img src="[https://img.shields.io/badge/Versão-1.0-2563EB?style=for-the-badge](https://img.shields.io/badge/Versão-1.0-2563EB?style=for-the-badge)">
-  <img src="[https://img.shields.io/badge/Projeto-Atividade%20Acadêmica-111827?style=for-the-badge](https://img.shields.io/badge/Projeto-Atividade%20Acadêmica-111827?style=for-the-badge)">
+  <img src="https://img.shields.io/badge/Status-FINALIZADO-10B981?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Status Finalizado">
+  <img src="https://img.shields.io/badge/Versão-1.0-2563EB?style=for-the-badge" alt="Versão 1.0">
+  <img src="https://img.shields.io/badge/Projeto-Atividade%20Acadêmica-111827?style=for-the-badge" alt="Projeto Acadêmico">
 </p>
 
 <p align="center">
-  <img src="[https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)">
-  <img src="[https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)">
-  <img src="[https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)">
-  <img src="[https://img.shields.io/badge/UI-Framer%20Style-black?style=for-the-badge](https://img.shields.io/badge/UI-Framer%20Style-black?style=for-the-badge)">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express">
+  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/UI-Framer%20Style-111827?style=for-the-badge" alt="Framer Style">
 </p>
 
 ---
 
 ## 📑 Índice
+
 1. [Sobre o Projeto](#-sobre-o-projeto)
 2. [Objetivo da Atividade](#-objetivo-da-atividade)
 3. [Equipe de Desenvolvimento](#-equipe-de-desenvolvimento)
@@ -26,134 +27,263 @@
 8. [Requisitos de Execução](#-requisitos-de-execução)
 9. [Como Rodar o Projeto](#-como-rodar-o-projeto)
 10. [Observações sobre Git e node_modules](#-observações-sobre-git-e-node_modules)
-11. [Contatos](#-contatos-e-redes-sociais)
+11. [Contatos e Redes Sociais](#-contatos-e-redes-sociais)
 
 ---
 
-## 🎯 Sobre o Projeto
-Este é um sistema de monitoramento de notícias automatizado que utiliza técnicas de **Web Scraping** para extrair manchetes em tempo real dos maiores portais do Brasil (G1, UOL e CNN Brasil). Os dados coletados são processados por um servidor Node.js e persistidos em um banco de dados relacional leve (SQLite).
+# 🎯 Sobre o Projeto
 
-Projeto desenvolvido para o curso de **Técnico em Desenvolvimento de Sistemas** na **Escola SENAI "A. Jacob Lafer"**.
+O **Monitor de Manchetes** é um sistema de monitoramento automatizado de notícias em tempo real que utiliza técnicas de **Web Scraping** para coletar manchetes dos principais portais de notícias do Brasil, como:
 
----
+- G1
+- UOL
+- CNN Brasil
 
-## ⚙️ Objetivo da Atividade
-A atividade teve como foco a integração de múltiplas camadas de desenvolvimento:
-- **Backend:** Construção de uma API REST com Express.
-- **Data Scraping:** Extração de dados via Axios e Cheerio.
-- **Persistência:** Implementação de operações de CRUD em SQLite.
-- **Frontend:** Criação de uma interface reativa e minimalista.
+As informações coletadas são processadas por um servidor desenvolvido em **Node.js** e armazenadas em um banco de dados local utilizando **SQLite**.
+
+O projeto foi desenvolvido como atividade acadêmica para o curso de **Técnico em Desenvolvimento de Sistemas** da **Escola SENAI "A. Jacob Lafer"**.
 
 ---
 
-## 👥 Equipe de Desenvolvimento
-Este projeto foi realizado em grupo por:
+# ⚙️ Objetivo da Atividade
+
+O principal objetivo da atividade foi integrar múltiplas áreas do desenvolvimento web moderno em um único sistema funcional.
+
+## O projeto envolveu:
+
+### 🔹 Backend
+Desenvolvimento de uma API REST utilizando **Express.js**.
+
+### 🔹 Web Scraping
+Extração automatizada de notícias utilizando:
+- Axios
+- Cheerio
+
+### 🔹 Persistência de Dados
+Armazenamento local utilizando:
+- SQLite3
+
+### 🔹 Frontend
+Construção de uma interface moderna, minimalista e responsiva.
+
+---
+
+# 👥 Equipe de Desenvolvimento
+
+Projeto desenvolvido em grupo por:
+
 - **Breno José de Oliveira**
 - **Gustavo Barreto**
 - **Mariana F. Nascimento**
 
 ---
 
-## 🏛️ Principais Funcionalidades
-- **Coleta Inteligente:** Extração de manchetes principais com tratamento de URLs e títulos.
-- **Banco de Dados Local:** Armazenamento automático de cada consulta para histórico.
-- **Operações CRUD Completas:**
-  - **Create:** Captura e inserção automática de notícias.
-  - **Read:** Listagem histórica das notícias salvas.
-  - **Delete:** Remoção de registros específicos do monitoramento.
-- **Dashboard Moderno:** Visualização em modo dark com feedback em tempo real.
+# 🏛️ Principais Funcionalidades
+
+## ✅ Coleta Inteligente
+- Captura automática de manchetes em tempo real.
+- Tratamento de links e títulos.
+- Organização das notícias por fonte.
+
+## ✅ Banco de Dados Local
+- Salvamento automático das notícias coletadas.
+- Histórico persistente de consultas.
+
+## ✅ Operações CRUD
+### Create
+Inserção automática das notícias no banco.
+
+### Read
+Listagem completa das notícias armazenadas.
+
+### Delete
+Remoção de registros específicos.
+
+## ✅ Dashboard Moderno
+- Interface em Dark Mode.
+- Feedback visual em tempo real.
+- Atualizações dinâmicas.
 
 ---
 
-## 🛠 Tecnologias e Bibliotecas
-- **Node.js:** Ambiente de execução.
-- **Express:** Framework web para gerenciamento de rotas e arquivos estáticos.
-- **Axios:** Para requisições HTTP aos portais de notícias.
-- **Cheerio:** Para parsing e manipulação do HTML (Scraping).
-- **SQLite3:** Banco de dados relacional para persistência local.
-- **Lucide Icons:** Biblioteca de ícones minimalistas.
+# 🛠 Tecnologias e Bibliotecas
+
+| Tecnologia | Função |
+|---|---|
+| Node.js | Ambiente de execução |
+| Express | Framework backend |
+| Axios | Requisições HTTP |
+| Cheerio | Parsing HTML e Scraping |
+| SQLite3 | Banco de dados |
+| Lucide Icons | Biblioteca de ícones |
 
 ---
 
-## 🧠 Estrutura do Projeto
-A organização segue padrões profissionais de separação de responsabilidades:
+# 🧠 Estrutura do Projeto
 
 ```text
 monitor-noticias/
-├── database/          # Arquivo do banco de dados SQLite (.db)
-├── public/            # Frontend (HTML, CSS Framer-like, JS Client)
-├── src/               # Backend (Lógica do Servidor)
-│   ├── index.js       # Ponto de entrada e rotas da API
-│   ├── db.js          # Configuração e funções do SQLite
-│   └── scraper.js     # Lógica de extração das notícias
-├── package.json       # Definição de dependências e scripts
-└── .gitignore         # Arquivos ignorados pelo Git (node_modules)
+│
+├── database/              # Banco de dados SQLite
+│   └── noticias.db
+│
+├── public/                # Frontend
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── src/                   # Backend
+│   ├── index.js           # Servidor principal
+│   ├── db.js              # Configuração SQLite
+│   └── scraper.js         # Web Scraping
+│
+├── package.json           # Dependências do projeto
+├── package-lock.json
+└── .gitignore
+````
+
+---
+
+# 🎨 Interface (UI/UX)
+
+A interface foi inspirada no design moderno da **Framer**, priorizando estética minimalista e experiência fluida.
+
+## Características visuais:
+
+### 🌑 Dark Mode Profundo
+
+* Melhor legibilidade
+* Menor fadiga visual
+
+### 🪟 Glassmorphism
+
+* Transparência
+* Blur
+* Efeito de vidro moderno
+
+### ✨ Micro-interações
+
+* Fade In
+* Hover suave
+* Loaders animados
+
+---
+
+# 💻 Requisitos de Execução
+
+Antes de iniciar o projeto, você precisa ter instalado:
+
+* **Node.js** (v14 ou superior)
+* **NPM** (já incluso no Node.js)
+
+---
+
+# 🚀 Como Rodar o Projeto
+
+## 1️⃣ Clone o repositório
+
+```bash
+git clone https://github.com/Breno-J-Oliveira/monitor-noticias.git
 ```
 
 ---
 
-## 🎨 Interface (UI/UX)
-A interface foi inspirada no design da **Framer**, utilizando:
-- **Dark Mode Profundo:** Foco em legibilidade e redução de fadiga visual.
-- **Glassmorphism:** Efeitos de desfoque e transparência em cards.
-- **Micro-interações:** Animações de entrada (Fade In), loaders de carregamento e estados de hover orgânicos.
+## 2️⃣ Entre na pasta do projeto
+
+```bash
+cd monitor-noticias
+```
 
 ---
 
-## 💻 Requisitos de Execução
-- **Node.js** instalado (versão 14 ou superior).
-- **NPM** (gerenciador de pacotes que vem com o Node).
+## 3️⃣ Instale as dependências
+
+A pasta `node_modules` não é enviada ao GitHub por ser muito pesada.
+
+Execute:
+
+```bash
+npm install
+```
 
 ---
 
-## 🚀 Como Rodar o Projeto
+## 4️⃣ Inicie o servidor
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/Breno-J-Oliveira/monitor-noticias.git
-   ```
-
-2. **Entre na pasta do projeto:**
-   ```bash
-   cd monitor-noticias
-   ```
-
-3. **Instale as dependências (IMPORTANTE):**
-   A pasta `node_modules` não é enviada ao GitHub por ser muito pesada. Você deve recriá-la rodando:
-   ```bash
-   npm install
-   ```
-
-4. **Inicie o servidor:**
-   ```bash
-   node src/index.js
-   ```
-
-5. **Acesse no navegador:**
-   Abra [http://localhost:3000](http://localhost:3000)
+```bash
+node src/index.js
+```
 
 ---
 
-## ⚠️ Observações sobre Git e node_modules
-Como este projeto utiliza Node.js, a pasta `node_modules` foi adicionada ao arquivo `.gitignore`. Isso é uma **boa prática de mercado**, pois garante que o repositório seja leve e que cada desenvolvedor instale as dependências corretas para seu próprio sistema operacional através do comando `npm install`.
+## 5️⃣ Acesse no navegador
+
+Abra:
+
+```text
+http://localhost:3000
+```
+
+---
+
+# ⚠️ Observações sobre Git e node_modules
+
+A pasta `node_modules` foi adicionada ao `.gitignore` por ser extremamente pesada e específica para cada sistema operacional.
+
+Essa é uma prática profissional adotada no mercado para:
+
+* Manter o repositório leve
+* Evitar conflitos entre ambientes
+* Garantir instalação limpa das dependências
+
+Todas as dependências podem ser recriadas utilizando:
+
+```bash
+npm install
+```
 
 ---
 
 ## 🤝 Contatos e Redes Sociais
-**Breno José de Oliveira**
-
 <p align="center">
-  <a href="[https://github.com/Breno-J-Oliveira](https://github.com/Breno-J-Oliveira)" target="_blank">
-    <img src="[https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)">
+  <a href="https://github.com/Breno-J-Oliveira" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
   </a>
-  <a href="[https://www.linkedin.com/in/breno-j-oliveira-672619352/](https://www.linkedin.com/in/breno-j-oliveira-672619352/)" target="_blank">
-    <img src="[https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)">
+  <a href="https://www.linkedin.com/in/breno-j-oliveira-672619352/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+  </a>
+  <a href="https://www.instagram.com/brenoov" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white">
+  </a>
+  <a href="https://x.com/BrenoJOliveira_" target="_blank">
+    <img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white">
   </a>
 </p>
 
 ---
 
-## 🏁 Conclusão Final
-O "Monitor de Manchetes" demonstra como o Node.js pode ser poderoso para tarefas de automação e coleta de dados. O projeto une a robustez do SQLite com uma interface moderna, resultando em uma ferramenta funcional que poderia ser facilmente escalada para um serviço de clipping profissional.
+# 🏁 Conclusão Final
+
+O **Monitor de Manchetes** demonstra como o ecossistema Node.js pode ser utilizado para criar aplicações modernas de automação e coleta de dados em tempo real.
+
+O projeto integra:
+
+* Web Scraping
+* API REST
+* Banco de dados relacional
+* Interface moderna
+
+Tudo isso em uma arquitetura simples, organizada e escalável.
+
+A aplicação pode facilmente evoluir para:
+
+* Sistemas profissionais de clipping
+* Dashboards analíticos
+* Plataformas de monitoramento de mídia
+* Serviços automatizados de notícias
 
 ---
+
+<p align="center">
+  Desenvolvido com 💻 utilizando Node.js, Express e SQLite
+</p>
