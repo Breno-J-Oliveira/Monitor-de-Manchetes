@@ -1,7 +1,3 @@
-Com base no seu modelo anterior e em todo o trabalho que realizamos para deixar o código impecável, aqui está o seu **README.md** profissional, completo e seguindo a estética que você gosta.
-
----
-
 # 📰 Monitor de Manchetes em Tempo Real com Node.js e SQLite
 
 <p align="center">
